@@ -20,6 +20,7 @@ export default function Footer() {
             <li><Link href="/restoration" className="hover:text-[var(--color-brass)] transition-colors">修復</Link></li>
             <li><Link href="/materials" className="hover:text-[var(--color-brass)] transition-colors">素材</Link></li>
             <li><Link href="/philosophy" className="hover:text-[var(--color-brass)] transition-colors">理念</Link></li>
+            <li><Link href="/about" className="hover:text-[var(--color-brass)] transition-colors">私たちについて</Link></li>
             <li><Link href="/studio" className="hover:text-[var(--color-brass)] transition-colors">スタジオ</Link></li>
           </ul>
         </div>

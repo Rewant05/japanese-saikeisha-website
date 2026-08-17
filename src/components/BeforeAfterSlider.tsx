@@ -76,6 +76,7 @@ export default function BeforeAfterSlider({
             fill
             className="object-cover object-center pointer-events-none"
             priority
+            sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </div>
 
@@ -90,6 +91,7 @@ export default function BeforeAfterSlider({
               alt={beforeAlt}
               fill
               className="object-cover object-center pointer-events-none"
+              sizes="(max-width: 1024px) 100vw, 1024px"
             />
           </div>
         </div>

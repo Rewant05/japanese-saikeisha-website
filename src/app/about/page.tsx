@@ -11,7 +11,7 @@ export default function AboutPage() {
         </ScrollReveal>
         
         <ScrollReveal delay={0.2}>
-          <h2 className="font-serif text-3xl mb-6">Our Philosophy</h2>
+          <h2 className="font-serif text-3xl mb-6">私たちの理念</h2>
           <p className="font-sans font-light text-lg leading-loose text-[var(--foreground)]/80">
             京都で設立された再景舎は、日本の建築遺産の保存に専念する建築家と伝統的な職人の集団です。私たちは、古い家屋にはその土地の記憶、忘れ去られた大工の技術、そして時の経過とともに生み出される古色が宿っていると信じています。私たちの使命は、これらの建造物を過去のものとして凍結するのではなく、未来に向けて思慮深く適応させることです。
           </p>

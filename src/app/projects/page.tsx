@@ -6,9 +6,9 @@ import Image from "next/image";
 const projects = [
   { id: "mountain-kominka", title: "山間の古民家", en: "Mountain Kominka", location: "長野", year: "2023年", img: "https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=2070&auto=format&fit=crop" },
   { id: "tsukimi-house", title: "月見の家", en: "Tsukimi House", location: "京都", year: "2022年", img: "https://images.unsplash.com/photo-1490100667990-4fced8021649?q=80&w=2073&auto=format&fit=crop" },
-  { id: "mizuniwa-residence", title: "水庭の邸", en: "Mizuniwa Residence", location: "金沢", year: "2023年", img: "https://images.unsplash.com/photo-1522067784013-eb14e04cd613?q=80&w=2070&auto=format&fit=crop" },
-  { id: "suginami-machiya", title: "杉並の町家", en: "Suginami Machiya", location: "東京", year: "2021年", img: "https://images.unsplash.com/photo-1520625624795-5d9c228d4de4?q=80&w=2072&auto=format&fit=crop" },
-  { id: "yukiguni-house", title: "雪国の家", en: "Yukiguni House", location: "新潟", year: "2024年", img: "https://images.unsplash.com/photo-1506509425126-724bbba9e38f?q=80&w=2070&auto=format&fit=crop" },
+  { id: "mizuniwa-residence", title: "水庭の邸", en: "Mizuniwa Residence", location: "金沢", year: "2023年", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2070&auto=format&fit=crop" },
+  { id: "suginami-machiya", title: "杉並の町家", en: "Suginami Machiya", location: "東京", year: "2021年", img: "https://images.unsplash.com/photo-1492571350019-22de08371fd3?q=80&w=2053&auto=format&fit=crop" },
+  { id: "yukiguni-house", title: "雪国の家", en: "Yukiguni House", location: "新潟", year: "2024年", img: "https://images.unsplash.com/photo-1480796927426-f609979314bd?q=80&w=2070&auto=format&fit=crop" },
 ];
 
 export default function ProjectsPage() {
@@ -25,6 +25,7 @@ export default function ProjectsPage() {
                     src={project.img}
                     alt={project.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>

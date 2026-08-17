@@ -12,6 +12,7 @@ const navLinks = [
   { name: "修復", path: "/restoration" },
   { name: "素材", path: "/materials" },
   { name: "理念", path: "/philosophy" },
+  { name: "私たちについて", path: "/about" },
   { name: "スタジオ", path: "/studio" },
 ];
 

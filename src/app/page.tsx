@@ -18,6 +18,8 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
             alt="Traditional Japanese Architecture"
             fill
+            sizes="100vw"
+            quality={90}
             className="object-cover object-center opacity-40 scale-105 animate-[pulse_20s_ease-in-out_infinite]"
             priority
           />
@@ -92,7 +94,7 @@ export default function Home() {
           <ScrollReveal delay={0.2}>
             <BeforeAfterSlider
               beforeImage="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" // Placeholder for old house
-              afterImage="https://images.unsplash.com/photo-1600607688969-a5bfcd64bd28?q=80&w=2070&auto=format&fit=crop" // Placeholder for restored
+              afterImage="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop" // Working Unsplash image
             />
           </ScrollReveal>
         </div>
@@ -141,9 +143,10 @@ export default function Home() {
                     src={project.img}
                     alt={project.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--charcoal)]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--charcoal)]/80 via-[var(--charcoal)]/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute bottom-0 left-0 p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                     <h3 className="font-serif text-2xl text-[var(--background)] mb-1">{project.title}</h3>
                     <p className="font-sans text-xs tracking-widest text-[var(--background)]/70 uppercase"></p>

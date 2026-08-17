@@ -43,7 +43,7 @@ const materials = [
     en: "Washi",
     origin: "Mino, Gifu",
     philosophy: "障子を通して強烈な日光を拡散させ、柔らかく光り輝く照明に変えます。",
-    color: "bg-[var(--color-ivory)]",
+    color: "bg-[var(--color-ivory)]/20",
   },
   {
     id: "stone",
