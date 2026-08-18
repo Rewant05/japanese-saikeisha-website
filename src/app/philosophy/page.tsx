@@ -13,7 +13,7 @@ export default function PhilosophyPage() {
             <div className="aspect-[3/4] relative bg-[var(--color-stone)]/10">
               <Image 
                 src="https://images.unsplash.com/photo-1578469550956-0e16b69c6a3d?q=80&w=2006&auto=format&fit=crop" 
-                alt="Traditional Joinery" 
+                alt="伝統的な木組み" 
                 fill 
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-700" 
               />
@@ -32,7 +32,7 @@ export default function PhilosophyPage() {
             <div className="aspect-[3/4] relative bg-[var(--color-stone)]/10 md:col-start-2">
               <Image 
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
-                alt="Modern Integration" 
+                alt="現代との融合" 
                 fill 
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-700" 
               />

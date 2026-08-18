@@ -44,3 +44,14 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Performance: lazy render below-fold sections */
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}

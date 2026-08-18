@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "再景舎 | Saikeisha",
+  title: "再景舎 ｜ 日本建築修復スタジオ",
   description: "日本の生きた遺産を保護する。伝統的な日本家屋を修復するプレミアムな日本建築スタジオ。",
 };
 

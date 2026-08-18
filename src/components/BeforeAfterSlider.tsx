@@ -55,7 +55,7 @@ export default function BeforeAfterSlider({
 
   return (
     <div className="w-full max-w-5xl mx-auto flex flex-col space-y-6">
-      <div className="flex justify-between items-center text-sm font-sans tracking-widest text-[var(--color-stone)]">
+      <div className="flex justify-between items-center text-sm font-sans tracking-widest text-[var(--color-ivory)]">
         <span>改装前</span>
         <span>再生後</span>
       </div>

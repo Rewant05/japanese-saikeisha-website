@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
 
 const timelineSteps = [
-  { id: "01", jp: "調査", en: "Survey", desc: "既存の骨組みの構造的完全性と歴史的意義を評価します。" },
-  { id: "02", jp: "記録", en: "Document", desc: "介入前の詳細な建築マッピングと素材のカタログ化。" },
-  { id: "03", jp: "解体", en: "Careful Deconstruction", desc: "中核となる木材を保存しながら、非構造的または劣化した要素を解体します。" },
-  { id: "04", jp: "再生", en: "Restoration", desc: "多くの場合、伝統的な継手の技術を使用して、元の木材を処理および修理します。" },
-  { id: "05", jp: "再構築", en: "Reconstruction", desc: "最新の断熱材と耐震補強を施して構造を再構築します。" },
-  { id: "06", jp: "暮らし", en: "Modern Living", desc: "現代の設備を伝統的な美学にシームレスに統合します。" },
+  { id: "01", jp: "調査", desc: "既存の骨組みの構造的完全性と歴史的意義を評価します。" },
+  { id: "02", jp: "記録", desc: "介入前の詳細な建築マッピングと素材のカタログ化。" },
+  { id: "03", jp: "解体", desc: "中核となる木材を保存しながら、非構造的または劣化した要素を解体します。" },
+  { id: "04", jp: "再生", desc: "多くの場合、伝統的な継手の技術を使用して、元の木材を処理および修理します。" },
+  { id: "05", jp: "再構築", desc: "最新の断熱材と耐震補強を施して構造を再構築します。" },
+  { id: "06", jp: "暮らし", desc: "現代の設備を伝統的な美学にシームレスに統合します。" },
 ];
 
 export default function Timeline() {

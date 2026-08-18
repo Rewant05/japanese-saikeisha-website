@@ -16,11 +16,11 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
-            alt="Traditional Japanese Architecture"
+            alt="伝統的な日本建築"
             fill
             sizes="100vw"
             quality={90}
-            className="object-cover object-center opacity-40 scale-105 animate-[pulse_20s_ease-in-out_infinite]"
+            className="object-cover object-center opacity-40 scale-105"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--background)]/30 via-transparent to-[var(--background)]"></div>
@@ -86,15 +86,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
             <div className="mb-16 text-center">
-              <h2 className="font-serif text-3xl md:text-5xl tracking-widest mb-4">再生 Before / After</h2>
+              <h2 className="font-serif text-3xl md:text-5xl tracking-widest mb-4">再生の比較</h2>
               <p className="font-sans font-light text-sm tracking-[0.2em] uppercase text-[var(--color-brass)]">修復の比較</p>
             </div>
           </ScrollReveal>
           
           <ScrollReveal delay={0.2}>
             <BeforeAfterSlider
-              beforeImage="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" // Placeholder for old house
-              afterImage="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop" // Working Unsplash image
+              beforeImage="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop"
+              afterImage="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop"
             />
           </ScrollReveal>
         </div>
@@ -134,11 +134,11 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {[
-              { title: "山間の古民家", en: "Mountain Kominka", img: "https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=2070&auto=format&fit=crop" },
-              { title: "月見の家", en: "Tsukimi House", img: "https://images.unsplash.com/photo-1490100667990-4fced8021649?q=80&w=2073&auto=format&fit=crop" },
+              { title: "山間の古民家", slug: "mountain-kominka", img: "https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=2070&auto=format&fit=crop" },
+              { title: "月見の家", slug: "tsukimi-house", img: "https://images.unsplash.com/photo-1490100667990-4fced8021649?q=80&w=2073&auto=format&fit=crop" },
             ].map((project, i) => (
-              <ScrollReveal key={project.en} delay={i * 0.2}>
-                <Link href={`/projects/${project.en.toLowerCase().replace(" ", "-")}`} className="group block relative overflow-hidden bg-[var(--color-stone)]/10 aspect-square md:aspect-[4/5]">
+              <ScrollReveal key={project.slug} delay={i * 0.2}>
+                <Link href={`/projects/${project.slug}`} className="group block relative overflow-hidden bg-[var(--color-stone)]/10 aspect-square md:aspect-[4/5]">
                   <Image
                     src={project.img}
                     alt={project.title}
